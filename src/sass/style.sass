@@ -1,8 +1,12 @@
 $var1: #212121
 $var2: #FFFFFF
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: grey
 
-font-face 
-	font-family: 'Roboto'
+font-face   
+	font-family: 'Roboto'   
 	src: url(/fonts/Roboto-Black.ttf)
 
 * 
@@ -12,6 +16,10 @@ header
 	position: relative
 
 nav 
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 1
 	background-color: black
 	height: 51px
 
@@ -32,6 +40,7 @@ nav
 	
 
 .subheader 
+	margin-top: 51px
 	height: 84px
 	background-color: rgba(0,0,0, .6)
 	position: absolute
@@ -78,6 +87,7 @@ nav
 	text-transform: uppercase
 	color: white
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+	+btn_hover
 
 .promo>.button 
 	display: block
@@ -107,4 +117,16 @@ nav
 		font-weight: 300
 		color: white
 		text-align: center
+.circle
+	width: 116px
+	height: 116px
+	border-radius: 100%
+	background-color: #1EACC7
+.reasons_txt
+	margin-left: 141px
+	font-size: 17px
+	h2 
+		font-size: 17px
 	
+	
+		

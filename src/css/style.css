@@ -12,6 +12,10 @@ header {
 }
 
 nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: black;
   height: 51px;
 }
@@ -38,6 +42,7 @@ nav {
 }
 
 .subheader {
+  margin-top: 51px;
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -89,6 +94,10 @@ nav {
   color: white;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
+.column3 > .button:hover, .promo > .button:hover {
+  background-image: none;
+  background-color: grey;
+}
 
 .promo > .button {
   display: block;
@@ -120,6 +129,21 @@ nav {
   font-weight: 300;
   color: white;
   text-align: center;
+}
+
+.circle {
+  width: 116px;
+  height: 116px;
+  border-radius: 100%;
+  background-color: #1EACC7;
+}
+
+.reasons_txt {
+  margin-left: 141px;
+  font-size: 17px;
+}
+.reasons_txt h2 {
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
