@@ -1,110 +1,125 @@
-@font-face {
-    font-family:'Roboto';
-    src: url(/fonts/Roboto-Black.ttf);
+font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto-Black.ttf);
 }
-*{
-    font-family: 'Roboto',sans-serif;
-}
-header {
-    position: relative;
-}
-nav{
-    background-color: #212121;
-    height: 51px;
-}
-.menu {
-    display:flex;
-    justify-content:space-between ;
-    padding: 13px 70px;
-    margin-bottom: 0;
-    list-style-type: none;
-} 
-.menu .menu_link {
-    color: white;
-    font-size: 15px;
-    font-weight: 300;
 
+* {
+  font-family: "Roboto", sans-serif;
 }
-.menu .menu_item{
-    border-right: 2px dotted black;
-    padding-right: 28px;
+
+header {
+  position: relative;
 }
-.subheader{
-    height: 84px;
-    background-color: rgba(0,0,0, .6);
-    position:absolute;
-    width: 100%;
+
+nav {
+  background-color: black;
+  height: 51px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 70px;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.menu .menu_link {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+.subheader {
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
 }
 .subheader .subheader_logo {
-    display: block;
-    margin-top: 16px;
-    max-width: 100%;
+  display: block;
+  margin-top: 16px;
+  max-width: 100%;
 }
-.subheader .subheader_official{
-    margin-top: 6px;
-    opacity: 0.5;
-    color: white;
-    font-size: 13px;
-    font-weight: 400;
+.subheader .subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
 }
-.subheader_call{
-    margin-top: 18px;
-    font-size: 12px;
-    font-weight: 100;
-    color: white;
-    text-align: right;
+.subheader_call {
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  text-align: right;
 }
-.callus{
-    margin-top: 10px;
-    font-size: 22px;
-    color: white;
-    display: block;
-    line-height: 12px;    
-    font-weight: 200;
-}
-.column3>.button, .promo>.button {
-    margin-top: 18px;
-    width: 172px;
-    height: 46px;
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
-    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    border: none;
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-}
-.promo>.button{
 
-    display: block;
-    margin: 0 auto;
-    margin-top: 100px;
+.callus {
+  margin-top: 10px;
+  font-size: 22px;
+  color: white;
+  display: block;
+  line-height: 12px;
+  font-weight: 200;
 }
+
+.column3 > .button, .promo > .button {
+  margin-top: 18px;
+  width: 172px;
+  height: 46px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF));
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo > .button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 .promo {
-    min-height: 800px;
-    background: url(../img/1_display/uber_bg.png) center center / cover no-repeat;
-    padding: 150px 0 135px 0;
+  min-height: 800px;
+  background: url(../img/1_display/uber_bg.png);
+  padding: 150px 0 135px 0;
 }
 .promo_header {
-    margin-top: 36px;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    line-height: 28px;
+  margin-top: 36px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  line-height: 28px;
 }
 .promo_subheader {
-    font-size: 21px;
-    font-weight: 400;
-    text-align: center;
-    color: white;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
 }
-.promo_descr{
-    font-size: 18px;
-    font-weight: 300;
-    color: white;
-    text-align: center;
+.promo_descr {
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */
