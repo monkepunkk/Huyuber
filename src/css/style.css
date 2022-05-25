@@ -131,19 +131,59 @@ nav {
   text-align: center;
 }
 
+.reasons_header {
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 45px;
+}
+
+.card {
+  font-size: 15px;
+}
+.card .card-title {
+  color: #1EACC7;
+  font-size: 17px;
+}
+.card .card-body {
+  margin-left: 15px;
+}
+
 .circle {
+  margin-top: 16px;
   width: 116px;
   height: 116px;
   border-radius: 100%;
   background-color: #1EACC7;
 }
 
-.reasons_txt {
-  margin-left: 141px;
-  font-size: 17px;
+.reasons_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.reasons_txt h2 {
-  font-size: 17px;
+
+.spirit {
+  width: 85px;
+  height: 85px;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+
+.benefits {
+  width: 115px;
+  height: 27px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 22px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 27px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
