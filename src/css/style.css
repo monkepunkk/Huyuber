@@ -140,11 +140,17 @@ nav {
 }
 
 .card {
+  margin-bottom: 26px;
+  font-size: 15px;
+}
+.card_right {
+  margin-left: 65px;
+  margin-bottom: 26px;
   font-size: 15px;
 }
 .card .card-title {
   color: #1EACC7;
-  font-size: 17px;
+  font-size: 15px;
 }
 .card .card-body {
   margin-left: 15px;
@@ -156,22 +162,25 @@ nav {
   height: 116px;
   border-radius: 100%;
   background-color: #1EACC7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reasons_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .spirit {
-  width: 85px;
-  height: 85px;
-  margin-left: 15px;
-  margin-top: 12px;
+  display: block;
 }
 
 .benefits {
