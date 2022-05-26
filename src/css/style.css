@@ -195,4 +195,54 @@ nav {
   color: white;
 }
 
+.choice {
+  position: relative;
+}
+
+.dark_side {
+  padding-top: 60px;
+  height: 502px;
+  background-color: black;
+}
+
+.white_side {
+  padding-top: 210px;
+  height: 397px;
+  background-color: white;
+}
+
+.car {
+  position: absolute;
+  display: block;
+  top: 231px;
+  width: 759px;
+  left: 25%;
+}
+
+.posib {
+  background-color: white;
+  height: 24px;
+  width: 112px;
+  font-size: 11px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 24px;
+}
+
+.everyday {
+  font-size: 17px;
+  width: 327px;
+  height: 49px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choice_header {
+  text-transform: uppercase;
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 26px;
+}
+
 /*# sourceMappingURL=style.css.map */
