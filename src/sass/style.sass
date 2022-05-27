@@ -251,4 +251,40 @@ nav
 	position: absolute
 	top: 25%
 	left: 25%
-		
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+	&_title
+		font-size: 22px
+		color: #1CA8C3	
+		&_red
+			color: #FF5656
+	
+	&_descr
+		color: #1CA8C3
+		font-size: 17px
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			display: inline-block
+			font-size: 17px 
+			margin-bottom: 10px
+			font-weight: 300
+			&::before
+				content: ''
+				display: inline-block
+				width: 21px
+				height: 20px
+				background: url(../img/check_blue.png) center (center/cover) no-repeat
+				vertical-align: middle
+				transform: translate(-5px , -2px)
+		.red
+			&::before
+				background: url(../img/check_red.png) center (center/cover) no-repeat
+
+
+
+
