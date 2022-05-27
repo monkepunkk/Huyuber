@@ -131,7 +131,7 @@ nav {
   text-align: center;
 }
 
-.reasons_header {
+.header {
   font-size: 38px;
   text-transform: uppercase;
   text-align: center;
@@ -156,7 +156,7 @@ nav {
   margin-left: 15px;
 }
 
-.circle {
+.col-md-3 > .circle {
   margin-top: 16px;
   width: 116px;
   height: 116px;
@@ -187,15 +187,18 @@ nav {
   padding-bottom: 64px;
 }
 
-.benefits {
+.label {
   width: 115px;
   height: 27px;
-  background-color: black;
   margin: 0 auto;
   margin-top: 22px;
   font-size: 11px;
   text-align: center;
   line-height: 27px;
+}
+
+.label_dark {
+  background-color: black;
   color: white;
 }
 
@@ -223,7 +226,7 @@ nav {
   left: 25%;
 }
 
-.posib {
+.dark_side > .label {
   background-color: white;
   height: 24px;
   width: 112px;
@@ -247,6 +250,68 @@ nav {
   font-size: 38px;
   text-align: center;
   margin-top: 26px;
+}
+
+.subtitle {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.mobile {
+  min-height: 864px;
+  padding-top: 48px;
+  padding-bottom: 79px;
+  background: url(../img/mobile/mobile_bg.png);
+}
+
+.row_mobile {
+  margin-top: 29px;
+}
+
+.mobile_item {
+  position: relative;
+  margin-top: 19px;
+  padding-top: 82px;
+  height: 280px;
+  width: 320px;
+  background-color: black;
+}
+
+.item_1 {
+  background: url(../img/mobile/card_1.png) center center/cover no-repeat;
+}
+.item_2 {
+  background: url(../img/mobile/card_2.png) center center/cover no-repeat;
+}
+.item_3 {
+  background: url(../img/mobile/card_3.png) center center/cover no-repeat;
+}
+.item_4 {
+  background: url(../img/mobile/card_4.png) center center/cover no-repeat;
+}
+.item_5 {
+  background: url(../img/mobile/card_5.png) center center/cover no-repeat;
+}
+.item_6 {
+  background: url(../img/mobile/card_6.png) center center/cover no-repeat;
+}
+
+.mobile_item_subtitle {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobile_item > .circle {
+  position: absolute;
+  bottom: 34px;
+  width: 29px;
+  height: 29px;
+  left: 145px;
+  background-color: black;
+  border-radius: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
