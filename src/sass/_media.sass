@@ -1,0 +1,72 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+            color: red
+    .car
+        left: 50%
+        transform: translateX(-50%)
+    .column3 > .button, .butt>.button 
+        font-size: 11px
+        width: 100%
+    .subheader_call
+        text-align: left
+    
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 9px
+            color: green
+    .promo
+        &_header
+            font-size: 36px
+    .subheader_call
+        text-align: left
+    .subheader
+        .subheader_official
+            font-size: 10px
+    .callus
+        font-size: 18px
+    .links_three
+        padding-left: 24px
+    .links_five
+        padding-left: 16px
+        padding-right: 0
+    .link
+        font-size: 13px
+        &_small
+            font-size: 10px
+    .dark_circle
+        height: 27px
+        width: 27px
+        
+    
+@media (max-width: 767px)
+    .car
+        width: 75%
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh /* 100 процентов видимого пространства   */
+        padding: 20px 15px
+        background-color: rgba(0,0 ,0 ,0.8 )
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 10px
+        &_link
+            font-size: 20px
+
+
