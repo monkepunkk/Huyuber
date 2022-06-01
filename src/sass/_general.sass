@@ -12,6 +12,8 @@ nav
 	z-index: 1
 	background-color: black
 	height: 51px
+.hamburger
+	display: none
 
 .menu 
 	display: flex
@@ -81,13 +83,14 @@ nav
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 	+btn_hover
 
+
 .butt
 	margin: 0 auto
 	margin-top: 100px
 
 .promo 
 	min-height: 800px
-	background: url(../img/1_display/uber_bg.png)
+	background: url(../img/1_display/uber_bg.png)  center (center/cover) no-repeat
 	padding: 150px 0 135px 0
 	&_header 
 		margin-top: 36px
@@ -206,7 +209,7 @@ nav
 	width: 100%
 	padding-top: 48px
 	padding-bottom: 79px
-	background: url(../img/mobile/mobile_bg.png)
+	background: url(../img/mobile/mobile_bg.png)  center (center/cover) no-repeat
 .row_mobile
 	margin-top: 29px
 .mobile_item
@@ -282,7 +285,7 @@ nav
 			&::before
 				background: url(../img/check_red.png) center (center/cover) no-repeat
 .allworld
-	background: url(../img/world_bg.png)
+	background: url(../img/world_bg.png) center (center/cover) no-repeat
 	height: 720px
 	width: 100%
 	padding-top: 46px
@@ -366,3 +369,5 @@ footer
 	border-radius: 100%
 	i
 		color: white
+.xs-visible
+	display: none

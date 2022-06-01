@@ -20,6 +20,10 @@ nav {
   height: 51px;
 }
 
+.hamburger {
+  display: none;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +113,7 @@ nav {
 
 .promo {
   min-height: 800px;
-  background: url(../img/1_display/uber_bg.png);
+  background: url(../img/1_display/uber_bg.png) center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
 .promo_header {
@@ -270,7 +274,7 @@ nav {
   width: 100%;
   padding-top: 48px;
   padding-bottom: 79px;
-  background: url(../img/mobile/mobile_bg.png);
+  background: url(../img/mobile/mobile_bg.png) center center/cover no-repeat;
 }
 
 .row_mobile {
@@ -374,7 +378,7 @@ nav {
 }
 
 .allworld {
-  background: url(../img/world_bg.png);
+  background: url(../img/world_bg.png) center center/cover no-repeat;
   height: 720px;
   width: 100%;
   padding-top: 46px;
@@ -508,6 +512,10 @@ footer {
   color: white;
 }
 
+.xs-visible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 20px;
@@ -578,7 +586,11 @@ footer {
     width: 27px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+
   .car {
     width: 75%;
   }
@@ -614,6 +626,182 @@ footer {
   }
   .menu_link {
     font-size: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 30px;
+    height: 12px;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 2px;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+
+  .column3 > .callus {
+    text-align: center;
+    margin-left: 12px;
+  }
+
+  .column3 > .button {
+    width: 125px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 32px;
+  }
+
+  .butt > .button {
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
+    width: 125px;
+    height: 30px;
+    margin-left: 50%;
+  }
+
+  .butt {
+    margin: 0 auto;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .xs-hidden {
+    display: none;
+  }
+
+  .xs-visible {
+    display: block;
+  }
+
+  .promo_header {
+    line-height: 45px;
+  }
+
+  .social {
+    width: 150px;
+    padding-left: 0px;
+    padding-top: 40px;
+    margin-left: 10px;
+  }
+
+  .links_three {
+    padding-left: 20%;
+  }
+
+  .links_five {
+    padding-left: 12%;
+  }
+}
+@media (max-width: 575px) {
+  .subheader_official {
+    display: none;
+  }
+
+  .logo_img {
+    width: 100%;
+    margin-top: 20%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .column3 > .button {
+    width: 90px;
+    font-size: 7px;
+    margin-left: 45%;
+  }
+
+  .column3 > .callus {
+    margin-top: 15px;
+    margin-left: -13px;
+  }
+
+  .promo {
+    height: 450px;
+    padding-top: 240px;
+  }
+
+  .promo_descr {
+    display: none;
+  }
+
+  .promo_header {
+    font-size: 32px;
+  }
+
+  .butt > .button {
+    margin-left: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 160px;
+    height: 60px;
+    font-size: 14px;
+    margin-left: -13px;
+    margin-top: 25px;
+  }
+
+  .car {
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  .choice_header {
+    font-size: 30px;
+  }
+
+  .dark_side {
+    height: 360px;
+  }
+
+  .white_side {
+    height: 240px;
+    padding-top: 180px;
+  }
+
+  .allworld {
+    height: 450px;
+  }
+
+  .header_white {
+    font-size: 32px;
+  }
+
+  .require_list {
+    padding-left: 7px;
+  }
+
+  .header {
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  .cities {
+    width: 100%;
+    bottom: 24px;
+    font-size: 18px;
   }
 }
 

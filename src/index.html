@@ -15,7 +15,7 @@
     <header>
     <nav>
         <div class="container">
-                <ul class="menu menu_active">
+                <ul class="menu hamburger_active"> <!-- menu_active -->
                     <li class="menu_item">  <a href="#" class="menu_link"> Главная </a></li>
                     <li class="menu_item">  <a href="#" class="menu_link"> Со своим автомобилем </a> </li>
                     <li class="menu_item"> <a href="#" class="menu_link"> На автомобиле компании  </a> </li>
@@ -24,22 +24,28 @@
                     <li class="menu_item">    <a href="#" class="menu_link"> Оставить заявку</a> </li>
                 </ul>
         </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
     </nav>
     <div class="subheader">
         <div class="container">
             <div class="row">
-             <div class="col-md-4 offset-md-1">
-                 <a href="#" class="subheader_logo"> <img src="img/1_display/Uber.png" alt="logo"></a>
+             <div class=" col-6 col-md-4 offset-md-1">
+                 <a href="#" class="subheader_logo"> <img class="logo_img" src="img/1_display/Uber.png" alt="logo"></a>
                  <div class="subheader_official"> Официальный партнер Uber в Москве </div>
              </div>
  
-             <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2 ">
+             <div class="subheader_callus xs-hidden col-6 col-md-3 offset-md-1 col-xl-2 offset-xl-2 ">
                  <div class="subheader_call"> Звоните нам ежедневно </div>
                  <a href="tel:+74957970988" class="callus"> 8 495 797 09 88</a>
              </div>
  
-             <div class="col-md-3 col-lg-2  column3">
-                 <button class="button"> заказать звонок </button>
+             <div class=" col-6 col-md-3 col-lg-2  column3">
+                <a href="tel:+74957970988" class="callus xs-visible"> 8 495 797 09 88</a>
+                 <button class="  button"> заказать звонок </button>
              </div>
  
             </div>
@@ -56,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 butt">  <button class="button"> отправить заявку </button> </div>
+        <div class=" col-3 col-md-2 butt">  <button class="button"> отправить заявку </button> </div>
        
     </div>
    
@@ -219,5 +225,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
