@@ -246,11 +246,33 @@ nav
 	transform: translateX(-50%)
 	background-color: black
 	border-radius: 100%
-.plus
-	display: block
-	position: absolute
-	top: 25%
-	left: 25%
+	&:hover
+		background-color: red
+	&:before
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 25%
+		content: ''
+		display: block
+		width: 14px
+		height: 2px
+		background-color: #1FBAD6
+		z-index: 1
+
+	&:after
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: 25%
+		content: ''
+		display: block
+		width: 2px
+		height: 14px
+		background-color: #1FBAD6
+
+
+		
 .require
 	padding: 68px 0 84px 0
 	&_block
@@ -309,7 +331,8 @@ nav
 	transform: translateX(-50%)
 .links_three
 	display: flex
-	padding-left: 100px
+	margin-bottom: 12px
+	margin-left: 17%
 .links_five
 	display: flex
 	justify-content: space-between
@@ -375,4 +398,3 @@ footer
 	display: none
 	width: 100%
 	background-color: white
-		
